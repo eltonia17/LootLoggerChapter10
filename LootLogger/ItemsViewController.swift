@@ -5,4 +5,8 @@
 //  Created by Eltonia Leonard on 10/31/25.
 //
 
-import Foundation
+import UIKit
+
+class ItemsViewController: UITableViewController {
+
+}
