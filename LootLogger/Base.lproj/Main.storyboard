@@ -54,34 +54,35 @@
                                     <rect key="frame" x="0.0" y="0.0" width="393" height="65"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mzL-2d-GyM">
-                                            <rect key="frame" x="7" y="0.0" width="42" height="21"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <nil key="textColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9cJ-If-ecl">
-                                            <rect key="frame" x="298" y="22" width="42" height="21"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <nil key="textColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalCompressionResistancePriority="749" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o01-qe-jcs">
-                                            <rect key="frame" x="7" y="44" width="31" height="15"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalCompressionResistancePriority="749" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o01-qe-jcs">
+                                            <rect key="frame" x="27" y="55" width="31" height="4"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
                                             <color key="textColor" systemColor="secondaryLabelColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9cJ-If-ecl">
+                                            <rect key="frame" x="298" y="22" width="42" height="21"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mzL-2d-GyM">
+                                            <rect key="frame" x="27" y="11" width="42" height="21"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                            <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
                                     <constraints>
                                         <constraint firstItem="o01-qe-jcs" firstAttribute="leading" secondItem="mzL-2d-GyM" secondAttribute="leading" id="6H6-v9-DWF"/>
+                                        <constraint firstItem="o01-qe-jcs" firstAttribute="top" secondItem="mzL-2d-GyM" secondAttribute="bottom" constant="23" id="8Mh-Ei-2SB"/>
                                         <constraint firstItem="mzL-2d-GyM" firstAttribute="top" secondItem="oqA-7d-05g" secondAttribute="topMargin" id="Bg2-iB-z7p"/>
                                         <constraint firstItem="mzL-2d-GyM" firstAttribute="leading" secondItem="oqA-7d-05g" secondAttribute="leadingMargin" constant="7" id="HVB-ry-Ea2"/>
                                         <constraint firstAttribute="trailing" secondItem="9cJ-If-ecl" secondAttribute="trailing" constant="53" id="Lq2-37-OTV"/>
-                                        <constraint firstItem="mzL-2d-GyM" firstAttribute="leading" secondItem="oqA-7d-05g" secondAttribute="leading" constant="7" id="X1w-Wf-j9X"/>
+                                        <constraint firstAttribute="bottom" secondItem="o01-qe-jcs" secondAttribute="bottom" constant="15" id="NiM-OL-2hK"/>
+                                        <constraint firstAttribute="bottom" secondItem="o01-qe-jcs" secondAttribute="bottom" constant="6" id="QMV-oG-x1Q"/>
                                         <constraint firstItem="9cJ-If-ecl" firstAttribute="centerY" secondItem="oqA-7d-05g" secondAttribute="centerY" id="ZZk-EZ-ffK"/>
                                         <constraint firstAttribute="bottom" secondItem="o01-qe-jcs" secondAttribute="bottom" constant="6" id="glf-Ib-ajU"/>
-                                        <constraint firstItem="mzL-2d-GyM" firstAttribute="top" secondItem="oqA-7d-05g" secondAttribute="top" id="qyw-6Q-0ou"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
