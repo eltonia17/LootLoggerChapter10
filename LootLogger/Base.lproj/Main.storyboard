@@ -8,16 +8,16 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Detail View Controller-->
         <scene sceneID="6ex-G6-2Db">
             <objects>
-                <viewController id="qiA-UI-hvb" sceneMemberID="viewController">
+                <viewController id="qiA-UI-hvb" customClass="DetailViewController" customModule="LootLogger" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tAw-cy-gD6">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="vTa-Sn-DSx">
-                                <rect key="frame" x="16" y="126" width="361" height="650"/>
+                                <rect key="frame" x="16" y="67" width="361" height="708"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="H5T-ke-5xP">
                                         <rect key="frame" x="0.0" y="0.0" width="361" height="34"/>
@@ -73,7 +73,7 @@
                                         </subviews>
                                     </stackView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="249" text="Date Created" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tT8-wr-auA">
-                                        <rect key="frame" x="0.0" y="126" width="361" height="524"/>
+                                        <rect key="frame" x="0.0" y="126" width="361" height="582"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -94,6 +94,13 @@
                             <constraint firstItem="vTa-Sn-DSx" firstAttribute="top" secondItem="0Xh-ct-eXn" secondAttribute="top" constant="8" id="LuC-fI-Qqb"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="VNG-ES-wcF"/>
+                    <connections>
+                        <outlet property="dateLabel" destination="tT8-wr-auA" id="wEA-dk-EON"/>
+                        <outlet property="nameField" destination="dhp-h0-k25" id="1oh-ou-7hI"/>
+                        <outlet property="serialNumberField" destination="c4c-1d-Ejd" id="Tjy-2u-bX5"/>
+                        <outlet property="valueField" destination="y57-jl-uQA" id="Xbk-6L-p48"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5I0-cf-qWo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -181,6 +188,7 @@
                                     <outlet property="nameLabel" destination="mzL-2d-GyM" id="46W-2U-RUf"/>
                                     <outlet property="serialNumberLabel" destination="o01-qe-jcs" id="Lev-pg-ZaI"/>
                                     <outlet property="valueLabel" destination="9cJ-If-ecl" id="cNa-SP-X1d"/>
+                                    <segue destination="qiA-UI-hvb" kind="show" identifier="showItem" id="psX-hv-ZZY"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
